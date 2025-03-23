@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div>
+        <h1>Web Technologies Survey</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+        <h2>Step 1 of 4: Personal Information</h2>
+            <!-- Form -->
+        <form action="#" method="POST">
+            <!--personal info  -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <br><br>
+                <label for="age">Age: </labe>
+                <input type="number" id="age" name="age" placeholder="Age" min="10" max="99" required>
+            </fieldset>
+            <br>
+        <!-- current role-->
+            <fieldset>
+                <legend>Which option best describes your current role?</legend>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value >Select Current Role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer Not To Say</option>
+                    <option value="others">Others</option>
+                </select>
+            </fieldset>
+            <h2>Step 2 of 4: Technologies & Tools</h2>
+            <!-- Web techonologies -->
+            <fieldset>
+                <legend>Which web technologies do you use?</legend>
+                <label for="html">
+                    <input type="checkbox" id="html" name="technologies" value="html">
+                    HTML
+                </label>
+                <label for="css">
+                    <input type="checkbox" id="css" name="technologies" value="css">
+                    CSS
+                </label>
+                <label for="javascript">
+                    <input type="checkbox" id="javascript" name="technologies" value="javascript">
+                    JavaScript
+                </label>
+                <label for="react">
+                    <input type="checkbox" id="react" name="technologies" value="react">
+                    React
+                </label>
+                <label for="vue-js">
+                    <input type="checkbox" id="vue-js" name="technologies" value="vue-js">
+                    Vue.js
+                </label>
+                <label for="angular">
+                    <input type="checkbox" id="angular" name="technologies" value="angular">
+                    Angular
+                </label>
+            </fieldset>
+            <br>
+            <!-- Code editor -->
+            <fieldset>
+                <legend>Which code editor do you use the most?</legend>
+                <input type="text" list="editor-options" id="editor" name="editor" placeholder=" Eg: Visual Code Studio" required>
+                <datalist id="editor-options">
+                    <option value="VS Code">
+                    <option value="Sublime Text">
+                    <option value="Atom">
+                    <option value="Notepad++">
+                    <option value="Other">
+                </datalist>
+            </fieldset>
+            <br>
+            <!-- Preferred backend -->
+            <fieldset>
+                <legend>Preferred Backend Technology</legend>
+                <label>
+                <input type="radio" name="backend" value="Node.js">
+                Node.js
+                </label>
+                <label>
+                <input type="radio" name="backend" value="Django">
+                Django
+                </label>
+                <label>
+                <input type="radio" name="backend" value="Flask">
+                Flask
+                </label>
+                <label>
+                <input type="radio" name="backend" value="Others">
+                Others
+                </label>
+                <label>
+                <input type="text" name="backend-other" placeholder="Specify other backend">
+                </label>
+            </fieldset>
+            <br>
+            <!-- Step 3 -->
+            <h2>Step 3 of 4: learning & Challenges</h2>
+            <!-- learnings -->
+            <fieldset>
+                <legend>Where do you usually learn web technologies from?</legend>
+                <input list="learning-option" name="learning" id="learning" placeholder="eg: YouTube" required>
+                <datalist id="learning-option">
+                    <option value="YouTube">
+                    <option value="Udemy">
+                    <option value="Coursera">
+                    <option value="FreeCodeCamp">
+                    <option value="Official Documentation">
+                    <option value="Other">
+                </datalist>
+            </fieldset>
+            <br>
+            <!-- Challanges -->
+            <fieldset>
+                <legend>Challenges in Web Development</legend>
+                <label for="Challenges">What is biggest Challenge you face?</label>
+                <textarea name="Challenges" id="Challenges" rows="4" cols="18" placeholder="Describe your challange..."></textarea>
+                <br>
+                <input type="checkbox" id="no-challanges" name="no-challanges" value="no-challanges">
+                <label for="no-challanges">I have no Challenges</label>
+            </fieldset>
+            <br>
+            <!--  step 4-->
+            <h2>Step 4 of 4: Career Goals & Feedback</h2>
+            <!-- Career goals -->
+            <fieldset>
+                <legend>Career Goals</legend>
+                <label for="goal">What is your career goal in web development?</label>
+                <textarea id="goal"  name="goal" rows="4" cols="20" placeholder="eg: Become a full stack developer, get a remote job, etc." ></textarea>
+            </fieldset>
+            <br>
+            <!-- Feedback -->
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="feedback">Any suggestions or feedback:</label>
+                <textarea name="feedback" id="feedback" rows="4" cols="18" placeholder="Share your thoughts..."></textarea>
+            </fieldset>
+            <br>
+            <!-- Submit -->
+             <button type="submit">Submit</button>
+        </form>
+    </div>
+</html>
